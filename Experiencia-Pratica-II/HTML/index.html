@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Modular CSS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Meu Projeto</div>
+    <ul>
+        <li>Home</li>
+        <li>Sobre
+            <ul>
+                <li>Equipe</li>
+                <li>Missão</li>
+            </ul>
+        </li>
+        <li>Projetos</li>
+        <li>Contato</li>
+    </ul>
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="row">
+        <div class="col-4">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Exemplo de conteúdo dentro do card.</p>
+                <span class="badge">Novo</span>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Exemplo de conteúdo dentro do card.</p>
+                <span class="badge">Em destaque</span>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Exemplo de conteúdo dentro do card.</p>
+                <span class="badge">Urgente</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Formulário de Contato</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>
