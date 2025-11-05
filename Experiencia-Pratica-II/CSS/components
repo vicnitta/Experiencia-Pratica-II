@@ -1,0 +1,50 @@
+/* ----------------------------------------------
+   COMPONENTS: botões, cards, formulários, badges
+------------------------------------------------- */
+
+/* Botões */
+.btn {
+  padding: var(--spacing-8) var(--spacing-16);
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover { background-color: var(--color-secondary); }
+.btn-primary:disabled { background-color: var(--color-neutral-200); cursor: not-allowed; }
+
+/* Cards */
+.card {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: var(--spacing-16);
+  margin: var(--spacing-16) 0;
+}
+
+/* Formulários */
+input, textarea, select {
+  width: 100%;
+  padding: var(--spacing-8);
+  margin-bottom: var(--spacing-16);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-neutral-200);
+  font-size: var(--font-base);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-secondary);
+  color: white;
+  font-size: var(--font-small);
+  margin-right: var(--spacing-8);
+}
