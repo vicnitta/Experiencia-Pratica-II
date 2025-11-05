@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG VerdeVida</title>
+  <meta name="description" content="ONG VerdeVida: Transformando vidas e cuidando do meio ambiente. Cadastro de voluntários e doadores.">
+  <style>
+    /* Reset e básico */
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:Arial, sans-serif;line-height:1.5;background:#f0fdf4;color:#064e3b;}
+    a{text-decoration:none;color:#0f766e;}
+    .container{max-width:1100px;margin:0 auto;padding:1rem;}
+    header{background:linear-gradient(90deg,#0f766e,#06b6d4);color:#fff;padding:1rem 0;}
+    header .container{display:flex;justify-content:space-between;align-items:center;}
+    .brand{font-size:1.5rem;font-weight:bold;}
+    nav a{margin-left:1rem;color:#fff;font-weight:500;}
+    .menu-toggle{display:none;font-size:1.5rem;background:none;border:none;color:#fff;cursor:pointer;}
+    section{padding:2rem 0;}
+    h1,h2,h3{margin-bottom:0.5rem;color:#064e3b;}
+    p{margin-bottom:1rem;}
+    .btn{display:inline-block;padding:0.5rem 1rem;background:#0f766e;color:#fff;border-radius:8px;margin-top:0.5rem;}
+    .btn.ghost{background:transparent;border:1px solid #0f766e;color:#0f766e;}
+    .grid-2{display:grid;grid-template-columns:1fr 320px;gap:1rem;align-items:start;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+    .card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    .card img{width:100%;height:160px;object-fit:cover;}
+    img{max-width:100%;border-radius:8px;}
+    form{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    fieldset{border:1px solid #0f766e;margin-bottom:1rem;padding:1rem;border-radius:8px;}
+    legend{font-weight:bold;color:#064e3b;}
+    label{display:block;margin-top:0.5rem;}
+    input, select{width:100%;padding:0.4rem;margin-top:0.2rem;border:1px solid #ccc;border-radius:4px;}
+    footer{background:#064e3b;color:#fff;padding:1rem;text-align:center;margin-top:2rem;}
+    .project-list{display:grid;gap:1.5rem;}
+    .project{display:grid;grid-template-columns:320px 1fr;gap:1rem;align-items:center;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+    .sidebar{background:#e6f4ea;padding:1rem;border-radius:8px;margin-top:1.5rem;}
+    .form-actions{margin-top:1rem;}
+    @media(max-width:800px){
+      .grid-2,.project{grid-template-columns:1fr;}
+      .menu-toggle{display:block;}
+      nav{display:none;}
+      nav.open{display:block;background:rgba(255,255,255,0.95);padding:1rem;border-radius:8px;margin-top:0.5rem;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="brand">ONG VerdeVida</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#cadastro">Cadastro</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- INÍCIO -->
+  <section id="inicio">
+    <h1>Transformando vidas e cuidando do planeta</h1>
+    <p>Missão: promover inclusão social e sustentabilidade ambiental, impactando positivamente nossa comunidade.</p>
+    <a href="#projetos" class="btn">Conheça nossos projetos</a>
+    <a href="#cadastro" class="btn ghost">Se torne voluntário</a>
+
+    <h2>Sobre a ONG VerdeVida</h2>
+    <div class="grid-2">
+      <div>
+        <p>Desde 2010 trabalhamos com educação ambiental, saúde comunitária e geração de renda sustentável. Nossa equipe é formada por profissionais e voluntários comprometidos com resultados reais e mensuráveis.</p>
+        <ul>
+          <li><strong>Visão:</strong> comunidades autossuficientes e conscientes do meio ambiente.</li>
+          <li><strong>Valores:</strong> transparência, empatia, sustentabilidade e inclusão.</li>
+        </ul>
+      </div>
+      <img src="https://observatorio3setor.org.br/startup-social-conecta-voluntarios-e-busca-profissionalizar-ongs-no-brasil/" alt="Equipe da ONG em atividade">
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <h2>Projetos Sociais</h2>
+    <p>Veja abaixo nossas principais iniciativas, oportunidades de voluntariado e formas de contribuir financeiramente.</p>
+
+    <div class="project-list">
+      <div class="project">
+        <img src="https://thumbor.novaescola.org.br/dsVkiqtEUmmo4NfbzqEjwmzBCFg=/nova-escola-producao.s3.amazonaws.com/u74DmkRZdT7J5eqC98zAm5A5R9tsXsnYMHGAgVx3AWSEtfJZHSqEzFRqZXu9/alfabetizacao-crianca-com-livro-alfabeto-movel-de-plastico-gettyimages.jpg" alt="Projeto de alfabetização">
+        <div>
+          <h3>Projeto Alfabetizar</h3>
+          <p>Objetivo: alfabetização de jovens e adultos, oferecendo oficinas semanais de leitura e escrita. Impacto: 450 pessoas atendidas.</p>
+          <p>Voluntariado: aulas às terças e quintas. <a href="#cadastro">Inscreva-se</a></p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="https://essatla.pt/wp-content/uploads/2023/01/curso-pos-licenciatura-especializacao-enfermagem-comunitaria-835x450.jpg" alt="Projeto saúde comunitária">
+        <div>
+          <h3>Saúde em Dia</h3>
+          <p>Objetivo: campanhas preventivas de saúde e triagem básica em comunidades. Impacto: 1.200 atendimentos realizados.</p>
+          <p>Doações: kits de primeiros socorros. <a href="#cadastro">Doar agora</a></p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="https://i.pinimg.com/736x/b1/10/50/b110500183289b5827b6035e2b1e1b0c.jpg" alt="Projeto meio ambiente">
+        <div>
+          <h3>Verde na Comunidade</h3>
+          <p>Objetivo: plantar árvores, criar hortas comunitárias e promover educação ambiental. Impacto: 300 árvores plantadas e 150 voluntários engajados.</p>
+          <p>Voluntariado e doações: <a href="#cadastro">Participe</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CADASTRO -->
+  <section id="cadastro">
+    <h2>Cadastro de Voluntário / Doador</h2>
+    <form id="cadastroForm" action="#" novalidate>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="nome">Nome completo</label>
+        <input id="nome" name="nome" type="text" required minlength="3">
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="cpf">CPF</label>
+        <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" required>
+
+        <label for="tel">Telefone</label>
+        <input id="tel" name="tel" type="tel" placeholder="(11) 91234-5678">
+
+        <label for="nasc">Data de nascimento</label>
+        <input id="nasc" name="nasc" type="date" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="cep">CEP</label>
+        <input id="cep" name="cep" type="text" placeholder="00000-000" required>
+
+        <label for="end">Endereço</label>
+        <input id="end" name="end" type="text" required>
+
+        <label for="cidade">Cidade</label>
+        <input id="cidade" name="cidade" type="text" required>
+
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione...</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferências de voluntariado</legend>
+        <label><input type="checkbox" name="area" value="educacao"> Educação</label>
+        <label><input type="checkbox" name="area" value="saude"> Saúde</label>
+        <label><input type="checkbox" name="area" value="meio-ambiente"> Meio ambiente</label>
+      </fieldset>
+
+      <p class="form-actions">
+        <button type="submit" class="btn">Enviar cadastro</button>
+        <button type="reset" class="btn ghost">Limpar</button>
+      </p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 ONG VerdeVida — Todos os direitos reservados.</p>
+  <p>
+    <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">YouTube</a>
+  </p>
+</footer>
+
+<script>
+  // Menu toggle mobile
+  const btn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+  btn.addEventListener('click', ()=>{
+    nav.classList.toggle('open');
+  });
+
+  // Máscaras simples de CPF, telefone e CEP
+  function mask(o,f){setTimeout(()=>{o.value=f(o.value);},1);}
+  function cpfMask(v){v=v.replace(/\D/g,'');v=v.replace(/(\d{3})(\d)/,'$1.$2');v=v.replace(/(\d{3})(\d)/,'$1.$2');v=v.replace(/(\d{3})(\d{1,2})$/,'$1-$2');return v;}
+  function telMask(v){v=v.replace(/\D/g,'');v=v.replace(/^(\d{2})(\d)/g,'($1) $2');v=v.replace(/(\d{4,5})(\d{4})$/,'$1-$2');return v;}
+  function cepMask(v){v=v.replace(/\D/g,'');v=v.replace(/(\d{5})(\d)/,'$1-$2');return v;}
+  document.getElementById('cpf').addEventListener('input',()=>mask(document.getElementById('cpf'),cpfMask));
+  document.getElementById('tel').addEventListener('input',()=>mask(document.getElementById('tel'),telMask));
+  document.getElementById('cep').addEventListener('input',()=>mask(document.getElementById('cep'),cepMask));
+
+  // Validação simples do formulário
+  document.getElementById('cadastroForm').addEventListener('submit',function(e){
+    if(!this.checkValidity()){e.preventDefault(); alert('Por favor, corrija os campos antes de enviar.');}
+    else{e.preventDefault(); alert('Cadastro simulado enviado — backend necessário para salvar.');}
+  });
+</script>
+
+</body>
+</html>
