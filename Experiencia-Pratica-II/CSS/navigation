@@ -1,0 +1,56 @@
+/* ----------------------------------------------
+   NAVIGATION: menus e dropdowns
+------------------------------------------------- */
+
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: var(--spacing-16);
+}
+
+/* Menu principal */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-16);
+}
+
+.navbar li {
+  position: relative;
+}
+
+/* Dropdown */
+.navbar li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: var(--spacing-8);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar li:hover ul { display: block; }
+
+/* Menu hambúrguer (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar ul { display: none; }
+  .hamburger { display: flex; }
+}
